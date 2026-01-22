@@ -3,7 +3,7 @@ import { Check, MessageCircle, Lock} from 'lucide-react'
 
 const Hero = () => {
     return (
-        <section className="relative h-screen w-full">
+        <section className="relative h-screen w-full border-b-[30px] border-b-amber-500">
             {/* Background Image */}
             <img
                 src={truckhead}
@@ -36,15 +36,15 @@ const Hero = () => {
                     </div>
 
                     <div className="mt-8 flex gap-5">
-                        <span className="flex flex-col text-center md:flex md:flex-row items-center gap-2">
+                        <span className="flex flex-col text-center font-bold md:flex md:flex-row items-center gap-2">
                             <Check className="w-6 h-6 text-amber-500 bg-white/10 rounded-full"/>
                             On-time delivery
                         </span>
-                        <span className="flex flex-col text-center md:flex md:flex-row items-center gap-2">
+                        <span className="flex flex-col text-center font-bold md:flex md:flex-row items-center gap-2">
                             <MessageCircle className="w-6 h-6 text-amber-500 bg-white/10 rounded-full"/>
                             24/7 support
                         </span>
-                        <span className="flex flex-col text-center md:flex md:flex-row items-center gap-2">
+                        <span className="flex flex-col text-center font-bold md:flex md:flex-row items-center gap-2">
                             <Lock className="w-6 h-6 text-amber-500 bg-white/10 rounded-full"/>
                             secure and reliable
                         </span>
@@ -53,6 +53,8 @@ const Hero = () => {
 
             </div>
         </section>
+
+        
     );
 };
 

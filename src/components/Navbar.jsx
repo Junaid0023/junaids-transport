@@ -21,7 +21,7 @@ const Navbar = () => {
             <Link to="/" className=' hover:text-amber-300'>Home</Link>
             <Link to="/About" className=' hover:text-amber-300'>About</Link>
             <Link to="/Services" className=' hover:text-amber-300'>Services</Link>
-            <Link to="/Contact" className=' hover:text-amber-300 bg-amber-500 py-4 px-10 rounded-full'>contact</Link>
+            <Link to="/Contact" className=' hover:bg-amber-500 border border-amber-500 py-3 px-10 rounded-full transition-all duration-200'>contact</Link>
 
 
           </div>
