@@ -24,7 +24,7 @@ const Hero = () => {
                     </p>
 
                 {/* cta */}
-                    <div className="flex flex-col md:flex-row mt-6 gap-4">
+                    <div className="flex flex-col md:flex-row mt-12 gap-4">
                         <button className="bg-amber-500 px-6 py-3 rounded-full text-white font-semibold">
                             Book A Truck Now
                         </button>
@@ -35,16 +35,16 @@ const Hero = () => {
                         </button>
                     </div>
 
-                    <div className="mt-8 flex gap-5">
-                        <span className="flex flex-col text-center font-bold md:flex md:flex-row items-center gap-2">
+                    <div className="mt-8 flex gap-5 sm:text-center">
+                        <span className="flex flex-col text-center text-base md:flex md:flex-row items-center gap-2">
                             <Check className="w-6 h-6 text-amber-500 bg-white/10 rounded-full"/>
                             On-time delivery
                         </span>
-                        <span className="flex flex-col text-center font-bold md:flex md:flex-row items-center gap-2">
+                        <span className="flex flex-col text-center text-base md:flex md:flex-row items-center gap-2">
                             <MessageCircle className="w-6 h-6 text-amber-500 bg-white/10 rounded-full"/>
                             24/7 support
                         </span>
-                        <span className="flex flex-col text-center font-bold md:flex md:flex-row items-center gap-2">
+                        <span className="flex flex-col text-center text-base md:flex md:flex-row items-center gap-2">
                             <Lock className="w-6 h-6 text-amber-500 bg-white/10 rounded-full"/>
                             secure and reliable
                         </span>
