@@ -14,12 +14,12 @@ const Hero = () => {
             <div className="absolute inset-0 bg-black/60"></div>
 
             {/* hero-content */}
-            <div className="relative z-10 flex h-full items-center px-[8%] ">
+            <div className="relative z-10 flex h-full items-center px-[15%] ">
                 <div className="text-white max-w-xl  ">
-                    <h1 className="text-4xl md:text-6xl font-bold leading-tight">
-                        Reliable Transport & Logistics Services
+                    <h1 className="text-5xl  md:text-6xl font-bold leading-tight">
+                        Reliable <span className="text-amber-500">Transport & Logistics</span> Services
                     </h1>
-                    <p className="mt-4 text-lg text-gray-200">
+                    <p className="mt-4 text-lg text-gray-400">
                         Safe, fast and affordable transportation across the country
                     </p>
 
@@ -36,15 +36,15 @@ const Hero = () => {
                     </div>
 
                     <div className="mt-8 flex gap-5 sm:text-center">
-                        <span className="flex flex-col text-center text-base md:flex md:flex-row items-center gap-2">
+                        <span className="flex flex-col text-center text-sm md:flex md:flex-row items-center gap-2">
                             <Check className="w-6 h-6 text-amber-500 bg-white/10 rounded-full"/>
                             On-time delivery
                         </span>
-                        <span className="flex flex-col text-center text-base md:flex md:flex-row items-center gap-2">
+                        <span className="flex flex-col text-center text-sm md:flex md:flex-row items-center gap-2">
                             <MessageCircle className="w-6 h-6 text-amber-500 bg-white/10 rounded-full"/>
                             24/7 support
                         </span>
-                        <span className="flex flex-col text-center text-base md:flex md:flex-row items-center gap-2">
+                        <span className="flex flex-col text-center text-sm md:flex md:flex-row items-center gap-2">
                             <Lock className="w-6 h-6 text-amber-500 bg-white/10 rounded-full"/>
                             secure and reliable
                         </span>

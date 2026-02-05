@@ -7,8 +7,8 @@ const Navbar = () => {
 
   const [isOpen, setIsOpen] = useState(false)
   return (
-    <nav className=' fixed top-4 left-1/2 -translate-x-1/2 z-50 w-[90%] md:w-[85%] text-white'>
-      <div className='bg-white/10 backdrop-blur-md rounded-full px-6 py-3 shadow-lg'>
+    <nav className=' fixed top-4 left-1/2 -translate-x-1/2 z-50 w-[90%] sm:w-[70%] text-white'>
+      <div className='bg-black/20 backdrop-blur-lg rounded-full border border-amber-300/20 px-6 py-3 shadow-lg'>
         <div className='flex items-center justify-between h-8 md:h-15'>
           {/* Logo */}
           <div className='text-3xl'>
@@ -28,18 +28,18 @@ const Navbar = () => {
 
           <button className='md:hidden' onClick={() => setIsOpen(prev => !prev)}
           >
-            {isOpen ? <X /> : <Menu />}
+            {isOpen ? <X className='border border-white '/> : <Menu className='border border-white '/>}
           </button>
         </div>
       </div>
 
       {/* mobile menu */}
       {isOpen && (
-        <div className='fixed text-sm md:hidden mt-3 bg-white/10 backdrop-blur-md text-white rounded-2xl shadow-lg'>
-          <Link to="/" className='block p-4 text-center' onClick={() => setIsOpen(false)}>Home</Link>
-          <Link to="/About" className='block p-4 text-center' onClick={() => setIsOpen(false)}>About</Link>
-              <Link to="/Service" className='block p-4 text-center' onClick={() => setIsOpen(false)}>Services</Link>
-          <Link to="/Contact" className='block p-4 text-center' onClick={() => setIsOpen(false)}>contact</Link>
+        <div className='text-sm md:hidden mt-3 bg-white/10 backdrop-blur-sm text-white rounded-2xl shadow-lg border border-white/20 animate-slide-in-bottom'>
+          <Link to="/" className='block p-4' onClick={() => setIsOpen(false)}>Home</Link>
+          <Link to="/About" className='block p-4' onClick={() => setIsOpen(false)}>About</Link>
+              <Link to="/Service" className='block p-4' onClick={() => setIsOpen(false)}>Services</Link>
+          <Link to="/Contact" className='block p-4' onClick={() => setIsOpen(false)}>contact</Link>
       
         </div>
       )}

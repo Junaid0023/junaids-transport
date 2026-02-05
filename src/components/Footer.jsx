@@ -87,7 +87,7 @@ const Footer = () => {
        
       </div>
 
-      <div className='border-t border-white-2 text-center py-3 text-sm'>
+      <div className='border-t border-gray-300 text-center py-3 text-sm'>
         {new Date().getFullYear()} Junaids Logistics . All rights reserved.
       </div>
       
